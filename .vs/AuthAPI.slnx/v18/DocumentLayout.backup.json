@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|c:\\users\\eahidalgo\\desktop\\cursos\\asp-net-core\\authapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|c:\\users\\eahidalgo\\desktop\\cursos\\asp-net-core\\authapi\\authapi\\models\\dtos\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\dtos\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|c:\\users\\eahidalgo\\desktop\\cursos\\asp-net-core\\authapi\\authapi\\models\\dtos\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\dtos\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|c:\\users\\eahidalgo\\desktop\\cursos\\asp-net-core\\authapi\\authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC95C26-79C7-425C-83CE-ACC0F8F2378E}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Program.cs",
+              "RelativeToolTip": "AuthAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T19:03:54.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\Dtos\\UserLogin.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Models\\Dtos\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\Dtos\\UserLogin.cs",
+              "RelativeToolTip": "AuthAPI\\Models\\Dtos\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T19:00:15.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\Dtos\\SignUp.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Models\\Dtos\\SignUp.cs",
+              "ToolTip": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\Dtos\\SignUp.cs",
+              "RelativeToolTip": "AuthAPI\\Models\\Dtos\\SignUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T18:59:01.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\eahidalgo\\Desktop\\Cursos\\ASP-NET-CORE\\AuthAPI\\AuthAPI\\Models\\User.cs",
+              "RelativeToolTip": "AuthAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T18:54:07.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
