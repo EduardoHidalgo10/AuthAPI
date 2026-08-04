@@ -1,1 +1,18 @@
-<p>register works!</p>,
+<div class="register-container">
+  <h1>Register</h1>
+  <form [formGroup]="registerForm" class="register-form" (ngSubmit)="submitRegister()">
+    <input type="text" formControlName="name" placeholder="Name" />
+    <input type="text" formControlName="email" placeholder="Email" />
+    <input type="password" formControlName="password" placeholder="Password" />
+    <button type="submit" class="register-button">Register</button>
+  </form>
+
+  @if (errorMessage()) {
+    <p class="error-message">{{ errorMessage() }}</p>
+  }
+
+  <p class="auth-link">
+    Have an account?
+    <a routerLink="/login">Login</a>
+  </p>
+</div>

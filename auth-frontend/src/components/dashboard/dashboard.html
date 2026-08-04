@@ -1,0 +1,50 @@
+<div class="dashboard">
+  <header class="dashboard-header">
+    <div class="user-info">
+      <span class="user-name">{{ authService.currentUser()?.name }}</span>
+      <span class="user-email">{{ authService.currentUser()?.userName }}</span>
+    </div>
+    <button type="button" class="logout-button" (click)="logout()">Logout</button>
+  </header>
+
+  <main class="dashboard-content">
+    <h1>Dashboard</h1>
+    <p>Bienvenido, {{ authService.currentUser()?.name }}.</p>
+
+    @if (authService.isAdmin()) {
+      <section class="admin-section">
+        <h2>Administrador</h2>
+        <p>Listado de usuarios registrados.</p>
+
+        @if (isLoadingUsers()) {
+          <p>Cargando usuarios...</p>
+        } @else if (usersError()) {
+          <p class="error-message">{{ usersError() }}</p>
+        } @else if (users().length === 0) {
+          <p>No hay usuarios para mostrar.</p>
+        } @else {
+          <table class="users-table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (user of users(); track user.id) {
+                <tr>
+                  <td>{{ user.id }}</td>
+                  <td>{{ user.name }}</td>
+                  <td>{{ user.userName }}</td>
+                  <td>{{ user.role }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        }
+      </section>
+    }
+  </main>
+</div>
