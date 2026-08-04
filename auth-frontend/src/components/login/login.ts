@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Auth } from '../../services/auth/auth';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +11,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 export class Login implements OnInit {
   loginForm!: FormGroup;
+  authService = inject(Auth);
 
 
   ngOnInit(): void {
@@ -20,9 +22,14 @@ export class Login implements OnInit {
   }
 
 
-
   submitLogin() {
-    console.log(this.loginForm.value);
-    
+    this.authService.login(this.loginForm.value).subscribe({
+      next: (response) => {
+        console.log('Login successful:', response);
+      },
+      error: (error) => {
+        console.error('Login failed:', error);
+      }
+    });
   }
 }
