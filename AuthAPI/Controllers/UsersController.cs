@@ -104,5 +104,34 @@ namespace AuthAPI.Controllers
 
             return Ok(loginResponse);
         }
+
+        [HttpPut("{id:int}/role")]
+        [Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> UpdateRole(int id, [FromBody] UpdateUserRoleDto dto)
+        {
+            if (dto is null)
+            {
+                return BadRequest(new { message = "Role data is required." });
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var normalizedRole = dto.Role.Trim();
+            if (normalizedRole != Roles.Admin && normalizedRole != Roles.User)
+            {
+                return BadRequest(new { message = "Role must be Admin or User." });
+            }
+
+            var updatedUser = await _userRepository.UpdateRole(id, normalizedRole);
+            if (updatedUser is null)
+            {
+                return NotFound();
+            }
+
+            return Ok(updatedUser);
+        }
     }
 }
