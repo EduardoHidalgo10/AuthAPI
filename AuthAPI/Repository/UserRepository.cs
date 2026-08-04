@@ -102,6 +102,26 @@ namespace AuthAPI.Repository
             };
         }
 
+        public async Task<UserRegisterDto?> UpdateRole(int userId, string role)
+        {
+            var user = _db.Users.FirstOrDefault(u => u.UserId == userId);
+            if (user is null)
+            {
+                return null;
+            }
+
+            user.Role = role;
+            await _db.SaveChangesAsync();
+
+            return new UserRegisterDto
+            {
+                Id = user.UserId.ToString(),
+                UserName = user.Email,
+                Name = user.Name,
+                Role = user.Role
+            };
+        }
+
         private string CreateJwtToken(User user)
         {
             var key = Encoding.ASCII.GetBytes(_secretKey);

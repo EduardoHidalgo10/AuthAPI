@@ -14,5 +14,7 @@ namespace AuthAPI.Repository.IRepository
         Task<UserLoginResponseDto> Login(UserLoginDto userLoginDto);
 
         Task<UserRegisterDto?> Register(UserSignUpDto signupUserDto);
+
+        Task<UserRegisterDto?> UpdateRole(int userId, string role);
     }
 }
