@@ -1,8 +1,17 @@
 <div class="login-container">
-    <h1>Login</h1>
-    <form [formGroup]="loginForm" class="login-form">
-        <input type="text" formControlName="email" placeholder="Email" />
-        <input type="password" formControlName="password" placeholder="Password" />
-        <button type="submit" class="login-button" (click)="submitLogin()">Login</button>
-    </form>
+  <h1>Login</h1>
+  <form [formGroup]="loginForm" class="login-form" (ngSubmit)="submitLogin()">
+    <input type="text" formControlName="email" placeholder="Email" />
+    <input type="password" formControlName="password" placeholder="Password" />
+    <button type="submit" class="login-button">Login</button>
+  </form>
+
+  @if (errorMessage()) {
+    <p class="error-message">{{ errorMessage() }}</p>
+  }
+
+  <p class="auth-link">
+    Don't have an account?
+    <a routerLink="/register">Register</a>
+  </p>
 </div>
