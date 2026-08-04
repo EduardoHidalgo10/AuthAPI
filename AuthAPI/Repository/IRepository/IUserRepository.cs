@@ -9,10 +9,10 @@ namespace AuthAPI.Repository.IRepository
 
         User? GetUser(int id);
 
-        bool IsUniqueUser(string name);
+        bool IsUniqueUser(string email);
 
         Task<UserLoginResponseDto> Login(UserLoginDto userLoginDto);
 
-        Task<User> Register(UserSignUpDto signupUserDto);
+        Task<UserRegisterDto?> Register(UserSignUpDto signupUserDto);
     }
 }
